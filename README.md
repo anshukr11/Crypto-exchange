@@ -1,3 +1,4 @@
+Demo -  https://669220f19856450008bd84b5--sage-crepe-76d28d.netlify.app/
 # Cryptocurrency Data Application
 
 This application displays real-time cryptocurrency data from the CoinCap API. It features a table view of cryptocurrencies with sorting and favoriting capabilities, as well as a details page for each cryptocurrency.
