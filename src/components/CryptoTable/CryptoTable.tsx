@@ -14,7 +14,7 @@ interface CryptoTableProps {
 
 const CryptoTable: React.FC<CryptoTableProps> = ({ cryptocurrencies, onSort, sortKey, sortDirection }) => {
   return (
-    <TableContainer component={Paper} sx={{ maxHeight: '80vh'}}>
+    <TableContainer component={Paper} sx={{ maxHeight: '60vh'}}>
       <Table>
         <TableHead>
           <TableRow>

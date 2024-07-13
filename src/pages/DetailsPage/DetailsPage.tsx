@@ -1,6 +1,7 @@
-import { CircularProgress, Container, Typography } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Box, CircularProgress, Container, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from "react-router-dom";
 import CryptoDetails from '../../components/CryptoDetails/CryptoDetails';
 import { CryptocurrencyDetails } from '../../types/types';
 import { fetchCryptocurrencyDetails } from '../../utils/api';
@@ -12,7 +13,9 @@ const DetailsPage: React.FC = () => {
   const [details, setDetails] = useState<CryptocurrencyDetails | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
+  
   useEffect(() => {
     const fetchDetails = async () => {
       if (id) {
@@ -31,6 +34,10 @@ const DetailsPage: React.FC = () => {
     fetchDetails();
   }, [id]);
 
+  const handleBack = () => {
+    navigate("/");
+  }
+
   if (loading) {
     return <CircularProgress />;
   }
@@ -45,9 +52,14 @@ const DetailsPage: React.FC = () => {
 
   return (
     <Container className="details-page">
-      <Typography variant="h4" gutterBottom>
+      <Box display={'flex'} alignItems={'start'} justifyContent={'flex-start'}>
+        <Box onClick={handleBack} sx={{ cursor: 'pointer'}}>
+          <ArrowBackIcon fontSize='large' />
+        </Box>
+      <Typography variant="h4" gutterBottom ml={12}>
         Cryptocurrency Details
       </Typography>
+      </Box>
       <CryptoDetails details={details} />
     </Container>
   );

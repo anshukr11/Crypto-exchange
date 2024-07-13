@@ -15,10 +15,6 @@
   color: #333;
 }
   
-.MuiTableBody-root .MuiTableRow-root:hover {
-  background-color: #f9f9f9;
-}
-
 .MuiTableCell-root {
   padding: 12px 15px;
   text-align: left;

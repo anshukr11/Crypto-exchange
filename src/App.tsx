@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 import { CustomThemeProvider } from './contexts/ThemeContext';
 import DetailsPage from './pages/DetailsPage/DetailsPage';
-import Layout from './pages/Layout/Layout';
 import TablePage from './pages/TablePage/TablePage';
 
 const App: React.FC = () => {
