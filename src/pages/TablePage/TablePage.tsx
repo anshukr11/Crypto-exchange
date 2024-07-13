@@ -30,6 +30,7 @@ const TablePage: React.FC = () => {
     fetchData();
     const interval = setInterval(fetchData, 10000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, [page]);
 
   const handleSort = (key: keyof Cryptocurrency) => {
