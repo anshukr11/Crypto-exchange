@@ -1,0 +1,18 @@
+
+.MuiIconButton-root.favorite-button {
+    padding: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .MuiIconButton-root.favorite-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .MuiIconButton-root.favorite-button .MuiSvgIcon-root {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .MuiIconButton-root.favorite-button.active .MuiSvgIcon-root {
+    color: #df1b1b;
+  }

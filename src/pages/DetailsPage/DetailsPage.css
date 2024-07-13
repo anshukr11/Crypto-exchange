@@ -1,0 +1,15 @@
+.details-page.MuiContainer-root {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .details-page .MuiTypography-h4 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .details-page .MuiButton-root.back-button {
+    margin-bottom: 20px;
+  }

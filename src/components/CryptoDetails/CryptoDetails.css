@@ -1,0 +1,29 @@
+.crypto-details.MuiPaper-root {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crypto-details .MuiTypography-h5 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .crypto-details .MuiTypography-body1 {
+    margin-bottom: 10px;
+  }
+  
+  .crypto-details .label {
+    font-weight: bold;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .crypto-details .change-positive {
+    color: #4caf50;
+  }
+  
+  .crypto-details .change-negative {
+    color: #f44336;
+  }

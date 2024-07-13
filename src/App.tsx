@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { CustomThemeProvider } from './contexts/ThemeContext';
+import DetailsPage from './pages/DetailsPage/DetailsPage';
+import Layout from './pages/Layout/Layout';
+import TablePage from './pages/TablePage/TablePage';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CustomThemeProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route index path="/" element={<TablePage />} />
+            <Route path="/details/:id" element={<DetailsPage />} />
+          </Routes>
+          </Layout>
+        </Router>
+    </CustomThemeProvider>
   );
-}
+};
 
-export default App;
+export default App

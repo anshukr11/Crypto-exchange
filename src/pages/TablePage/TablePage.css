@@ -1,0 +1,26 @@
+.table-page.MuiContainer-root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .table-page .MuiTypography-h4 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .table-page .MuiPagination-root {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .table-page .MuiPaginationItem-root {
+    color: #333;
+  }
+  
+  .table-page .MuiPaginationItem-root.Mui-selected {
+    background-color: #1976d2;
+    color: #fff;
+  }
